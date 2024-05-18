@@ -24,12 +24,14 @@ function App ()
     const component = await loadComponent( file );
     setSelect( component );
   }
+
   return (
-    <div style={ {
-      display: 'flex',
-      gap: '20px',
+    <div>
+      <div style={ {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '30px',
     }}>
-      <div>
         <h1>React Lazy Load</h1>
         <div style={ {
           display: 'flex',
