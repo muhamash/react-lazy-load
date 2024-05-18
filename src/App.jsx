@@ -8,10 +8,10 @@ function App ()
 {
   const [ select, setSelect ] = useState( null );
 
-  const handleSelect = ( type ) =>
+  const handleSelect = ( file ) =>
   {
-    console.log( "clicked on", type );
-    setSelect( type );
+    console.log( "clicked on", file );
+    setSelect( file );
   }
   return (
     <div>
