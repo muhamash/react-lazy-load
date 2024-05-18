@@ -2,17 +2,17 @@ const data = [
     {
         id: 1,
         name: "Shape",
-        file: "ShapeDemo",
+        file: "Shape",
     },
     {
         id: 2,
         name: "Color",
-        file: "ColorDemo",
+        file: "Color",
     },
     {
         id: 3,
         name: "Size",
-        file: "SizeDemo",
+        file: "Size",
     },
 ];
 

@@ -1,4 +1,4 @@
-import Circle from 'react-feather';
+import { Circle } from 'react-feather';
 
 export default function Color ()
 {
