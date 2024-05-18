@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import './App.css';
-import Shape from './components/Shape';
+import data from './data/Data.js';
 
 
 function App ()
@@ -20,8 +20,18 @@ function App ()
         <div style={ {
           display: 'flex',
           gap: '10px'
-        }}>
-          <button onClick={ () => handleSelect( 'shape' ) }>
+        } }>
+          {
+            data.map( ( datum ) => (
+              <button
+                onClick={()=> handleSelect(datum.file)}
+                key={datum.name}
+              >
+                {datum.name}
+              </button>
+            ))
+          }
+          {/* <button onClick={ () => handleSelect( 'shape' ) }>
             React Feather Shape
           </button>
           <button onClick={ () => handleSelect( 'color' ) } >
@@ -29,11 +39,11 @@ function App ()
           </button>
           <button onClick={ () => handleSelect( 'size' ) }>
             React Feather Size
-          </button>
+          </button> */}
         </div>
         <div>
           {
-            select === "shape" && <Shape/>
+            select
           }
         </div>
       </div>
